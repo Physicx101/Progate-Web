@@ -169,21 +169,24 @@ header .container {
 
 .services
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
+    margin: auto;
+    width: 100%;
 }
-
 
 .service
 {
-    flex: 0 0 30%;
-    min-height: 600px;
+    width: 22%;
+    float: left;
     background-color: white;
     border-radius: 8px;
-    padding: 40px 20px;
-    margin: 30px;
+    padding: 10px 20px;
+    min-height: 600px;
+    margin: 0 3%;
+}
+
+.service img
+{
+    width: 100%;
 }
 
 .service:hover {
@@ -191,10 +194,7 @@ header .container {
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
-.service img
-{
-    width: 100%;
-}
+
 
 .contact-wrapper
 {
@@ -303,6 +303,10 @@ footer
     color: rgba(255, 255, 255, 1.0);
 }
 
+
+
+
+
 /* 
 ---------------------------------------------
 responsive
@@ -310,24 +314,31 @@ responsive
 */
 
 @media all and (max-width: 1000px) {
-    .services
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        flex-flow: wrap;
-    }
-    
+
     
     .service
     {
-        flex: 0 0 50%;
-        min-height: 400px;
-        background-color: white;
-        border-radius: 8px;
-        padding: 40px 20px;
-        margin: 30px;
+        width: 100%;
+        margin: 40px;
     }
+
+    .form-wrapper, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+         }
+
+     .footer-left .logo h2{
+            text-align: center;
+        }
+        
+        .footer-right
+        {
+            float: center;
+        }
+
+        .footer-right li {
+            display: block;
+        }
   }
 
 @media all and (max-width: 670px) {
@@ -368,23 +379,12 @@ responsive
       }
       
 
-      .services
-      {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          flex-flow: wrap;
-      }
       
       
       .service
       {
-          flex: 0 0 100%;
-          min-height: 400px;
-          background-color: white;
-          border-radius: 8px;
-          padding: 40px 20px;
-          margin: 30px;
+          width: 100%;
+          margin: 40px;
       }
 
 
